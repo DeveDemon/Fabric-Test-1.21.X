@@ -1,5 +1,6 @@
 package net.devedemon.testmod;
 
+import net.devedemon.testmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -13,9 +14,6 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-	}
-
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+		ModItems.registerModItems();
 	}
 }
