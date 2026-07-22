@@ -1,4 +1,5 @@
 {
   "item.testmod.cat_png": "Cat Pic",
-  "block.testmod.mithril_ore": "Mithril Ore"
+  "block.testmod.mithril_ore": "Mithril Ore",
+  "itemgroup.testmod.test_mod_items": "Test Mod Items"
 }

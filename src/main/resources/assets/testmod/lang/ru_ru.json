@@ -1,4 +1,5 @@
 {
   "item.testmod.cat_png": "Изображение котика",
-  "block.testmod.mithril_ore": "Митриловая руда"
+  "block.testmod.mithril_ore": "Митриловая руда",
+  "itemgroup.testmod.test_mod_items": "Предметы из Тестового мода"
 }
