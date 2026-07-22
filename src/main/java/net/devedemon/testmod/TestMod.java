@@ -1,5 +1,6 @@
 package net.devedemon.testmod;
 
+import net.devedemon.testmod.block.ModBlocks;
 import net.devedemon.testmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
