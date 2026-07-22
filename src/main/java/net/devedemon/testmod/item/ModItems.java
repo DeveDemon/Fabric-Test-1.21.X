@@ -10,7 +10,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item CAT_PNG = registerItem("cat_png", new Item(new Item.Settings()));
+    public static final Item CAT_PNG = registerItem("cat_png",
+            new Item(new Item.Settings()));
+    public static final Item MITHRIL_INGOT = registerItem("mithril_ingot",
+            new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TestMod.MOD_ID, name), item);
@@ -21,6 +24,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(CAT_PNG);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(MITHRIL_INGOT);
         });
     }
 }
